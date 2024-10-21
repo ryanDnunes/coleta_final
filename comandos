@@ -1,0 +1,45 @@
+Aqui está uma lista que resume os principais métodos e funcionalidades do Pandas relacionados a Series, DataFrames, e CSV:
+
+1. Pandas Series
+Uma Series é uma estrutura de dados unidimensional que pode conter qualquer tipo de dado (inteiros, strings, floats, etc.).
+
+pd.Series(): Cria uma Series.
+.head(n): Retorna os primeiros n elementos da Series.
+.tail(n): Retorna os últimos n elementos da Series.
+.unique(): Retorna os valores únicos da Series.
+.value_counts(): Conta a frequência de cada valor único.
+.mean(): Calcula a média dos valores numéricos na Series.
+.sum(): Retorna a soma dos valores numéricos.
+.max(): Retorna o valor máximo.
+.min(): Retorna o valor mínimo.
+.apply(func): Aplica uma função a cada elemento da Series.
+.isna(): Retorna uma Series booleana indicando se os valores são nulos.
+.fillna(value): Preenche valores nulos com o valor especificado.
+2. Pandas DataFrame
+Um DataFrame é uma estrutura bidimensional (tabela) composta por colunas que podem ter diferentes tipos de dados.
+
+pd.DataFrame(): Cria um DataFrame.
+.head(n): Retorna os primeiros n registros do DataFrame.
+.tail(n): Retorna os últimos n registros.
+.describe(): Fornece estatísticas descritivas do DataFrame.
+.info(): Exibe informações sobre o DataFrame, como o número de entradas, tipos de dados e valores nulos.
+.dropna(): Remove registros com valores nulos.
+.fillna(value): Preenche valores nulos com um valor específico.
+.drop(columns): Remove colunas do DataFrame.
+.groupby(col): Agrupa os dados com base em uma coluna.
+.sort_values(by): Ordena o DataFrame com base em uma ou mais colunas.
+.merge(df2, on): Faz uma junção (join) entre dois DataFrames com base em colunas comuns.
+.apply(func): Aplica uma função a cada elemento de uma coluna ou do DataFrame inteiro.
+.loc[]: Acessa elementos por rótulo (nome da linha ou coluna).
+.iloc[]: Acessa elementos por índice (posição numérica).
+3. Operações com CSV
+O Pandas facilita a leitura e escrita de arquivos CSV.
+
+pd.read_csv(filepath): Lê um arquivo CSV e retorna um DataFrame.
+df.to_csv(filepath): Salva o DataFrame em um arquivo CSV.
+pd.read_csv(filepath, delimiter=','): Lê um CSV com delimitador customizado (por exemplo, ponto e vírgula).
+pd.read_csv(filepath, header=None): Lê um CSV sem cabeçalhos.
+df.to_csv(filepath, index=False): Salva o DataFrame em CSV sem incluir o índice.
+pd.read_csv(filepath, usecols=['col1', 'col2']): Lê apenas colunas específicas de um CSV.
+df.to_csv(filepath, sep=';'): Salva o DataFrame em CSV usando um separador específico (por exemplo, ponto e vírgula).
+Esses são alguns dos métodos mais importantes para trabalhar com Series, DataFrames, e CSV usando o Pandas. Eles são essenciais para manipulação de dados em Python!
